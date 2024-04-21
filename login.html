@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamShop - a clothing store</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="css/fontawesome.css" rel="stylesheet" />
+    <link href="css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script defer src="js/burger.js"></script>
+</head>
+<body>
+<div class="close-panel" id="close">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-9">
+                    <p class="flex">Sign up and get 20% off to your first order. <a href="registr.html">Sign Up Now</a></p>
+                </div>
+                <div class="col-md-2 col-sm-3 flex flex-start">
+                    <button class="close" onclick="hide()">
+                        <img src="img/icons/icon_close.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <nav class="header flex flex-align flex-between col-12 d-none d-sm-flex">
+                <a href="index.html">
+                    <h2>DreamShop</h2>
+                </a>
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu flex flex-between">
+                    <li class="link flex flex-align"><a href="shop.html" class="flex flex-align">Shop <img src="img/icons/icon-arrow-down.png" alt=""></a>
+                        <ul class="submenu">
+                            <li><a href="t-shirt.html">T-shirts</a></li>
+                            <li><a href="shorts.html">Shorts</a></li>
+                            <li><a href="jeans.html">Jeans</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                </ul>
+                <input type="search" placeholder="Search for products...">
+                <div class="icon-top flex flex-between">
+                    <a href="card.html">
+                        <img src="img/icons/icon_cart.png" alt="">
+                    </a>
+                    <a href="user.html">
+                        <img src="img/icons/icon_user.png" alt="">
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <section class="registr-login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <h2>You can Login here!</h2>
+                    <a href="registr.html" class="sign-login"> or you can Sign up!</a>
+                    <form action="">
+                        <label for="">Your email:</label>
+                        <input type="email" required>
+                        <label for="">Your password:</label>
+                        <input type="password" required>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="form flex flex-between flex-wrap">
+                <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                <form action="">
+                    <input type="email" placeholder="Enter your email address">
+                    <input type="submit" value="Subscribe to Newsletter">
+                </form>
+            </div>
+            <div class="row footer-info">
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                    <h2>DreamShop</h2>
+                    <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                    <div class="mb social flex flex-between">
+                        <img src="img/icons/icon_twitter.png" alt="">
+                        <img src="img/icons/icon_facebook.png" alt="">
+                        <img src="img/icons/icon_instagram.png" alt="">
+                        <img src="img/icons/icon_git.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-4">
+                    <h3>Company</h3>
+                    <a href="">About</a>
+                    <a href="">Features</a>
+                    <a href="">Works</a>
+                    <a href="">Career</a>
+                </div>
+                <div class="mb col-xl-2 col-lg-2 col-sm-3">
+                    <h3>Help</h3>
+                    <a href="">Customer Support</a>
+                    <a href="">Delivery Details</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+                <div class="col-xl-2 offset-xl-0 col-lg-2 offset-lg-0 col-sm-3 offset-sm-1">
+                    <h3>FAQ</h3>
+                    <a href="">Account</a>
+                    <a href="">Manage Deliveries</a>
+                    <a href="">Orders</a>
+                    <a href="">Payments</a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-3">
+                    <h3>Resources</h3>
+                    <a href="">Free eBooks</a>
+                    <a href="">Development Tutorial</a>
+                    <a href="">How to - Blog</a>
+                    <a href="">Youtube Playlist</a>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-lg-6">
+                    <p>DreamShop © 2024, All Rights Reserved</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="logo-card flex flex-between flex-end">
+                        <img src="img/icons/icon_visa.png" alt="">
+                        <img src="img/icons/icon_master.png" alt="">
+                        <img src="img/icons/icon_paypal.png" alt="">
+                        <img src="img/icons/icon_apay.png" alt="">
+                        <img src="img/icons/icon_pay.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function hide() {
+            let el = document.getElementById('close');
+            if (el.style.display === 'none') {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

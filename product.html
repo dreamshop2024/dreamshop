@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamShop - a clothing store</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="css/fontawesome.css" rel="stylesheet" />
+    <link href="css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script defer src="js/burger.js"></script>
+</head>
+<body>
+<div class="close-panel" id="close">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-9">
+                    <p class="flex">Sign up and get 20% off to your first order. <a href="registr.html">Sign Up Now</a></p>
+                </div>
+                <div class="col-md-2 col-sm-3 flex flex-start">
+                    <button class="close" onclick="hide()">
+                        <img src="img/icons/icon_close.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <nav class="header flex flex-align flex-between col-12 d-none d-sm-flex">
+                <a href="index.html">
+                    <h2>DreamShop</h2>
+                </a>
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu flex flex-between">
+                    <li class="link flex flex-align"><a href="shop.html" class="flex flex-align">Shop <img src="img/icons/icon-arrow-down.png" alt=""></a>
+                        <ul class="submenu">
+                            <li><a href="t-shirt.html">T-shirts</a></li>
+                            <li><a href="shorts.html">Shorts</a></li>
+                            <li><a href="jeans.html">Jeans</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                </ul>
+                <input type="search" placeholder="Search for products...">
+                <div class="icon-top flex flex-between">
+                    <a href="card.html">
+                        <img src="img/icons/icon_cart.png" alt="">
+                    </a>
+                    <a href="user.html">
+                        <img src="img/icons/icon_user.png" alt="">
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="img/products/product_shirt.png" alt="">
+                </div>
+                <div class="col-lg-7 product-pad">
+                    <h2>One Life Graphic T-shirt</h2>
+                    <span class="rate">4.5/5</span>
+                    <div class="detail flex flex-between flex-align">
+                        <div class="price flex">
+                            <span class="base">$120</span>
+                            <span class="sale">$100</span>
+                        </div>
+                    </div>
+                    <p>This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+                    <div class="select-size">
+                        <span>Choose Size</span>
+                        <div class="flex flex-between">
+                            <input type="checkbox" class="small">
+                            <input type="checkbox" class="medium">
+                            <input type="checkbox" class="large">
+                            <input type="checkbox" class="x-Large">
+                        </div>
+                    </div>
+                    <a href="" class="addTocard">Add to Cart</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'ProductDetails')" id="defaultOpen">Product Details</button>
+                        <button class="tablinks" onclick="openCity(event, 'RatingReviews')">Rating & Reviews</button>
+                        <button class="tablinks" onclick="openCity(event, 'FAQs')">FAQs</button>
+                    </div>
+                    <div id="ProductDetails" class="tabcontent detail">
+                        <h3>A CLASSIC TRAINING TEE MADE IN PART WITH RECYCLED MATERIALS</h3>
+                        <p>This adidas training tee is ready for everything from cardio to weights. No matter how intense the workout, you'll stay dry and focused thanks to AEROREADY technology that wicks away moisture. The slim fit lets you move confidently through every push up and overhead press.</p>
+                    </div>
+                    
+                    <div id="RatingReviews" class="tabcontent">
+                        <div class="product-testimonial flex ">
+                            <div class="swiper-slide testimonials-item">
+                                <div class="rate-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h4 class="flex flex-align">Sarah M. <img src="img/icons/icon_ok.png" alt=""></h4>
+                                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."</p>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="rate-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h4 class="flex flex-align">Alex K. <img src="img/icons/icon_ok.png" alt=""></h4>
+                                <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."</p>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="rate-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h4 class="flex flex-align">James L. <img src="img/icons/icon_ok.png" alt=""></h4>
+                                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."</p>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="rate-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h4 class="flex flex-align">Mooen <img src="img/icons/icon_ok.png" alt=""></h4>
+                                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."</p>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="rate-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h4 class="flex flex-align">Mooen <img src="img/icons/icon_ok.png" alt=""></h4>
+                                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."</p>
+                            </div>
+                            <div class="swiper-slide testimonials-item">
+                                <div class="rate-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <h4 class="flex flex-align">Mooen <img src="img/icons/icon_ok.png" alt=""></h4>
+                                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="FAQs" class="tabcontent faq">
+                        <h3>DELIVERY</h3>
+                        <h5>WHAT SHOULD I DO IF I HAVEN’T RECEIVED MY PACKAGE?</h5>
+                        <p>Standard shipping is 3-5 business days plus 1-3 business days for processing.</p>
+                        <p>Express shipping is three business days (unavailable for PO Box, APO, or FPO addresses)</p>
+                        <p>Standard shipping of personalized products is 3-5 business days plus five business days for processing</p>
+                        <p>If you haven’t received your package within our standard delivery times, please follow the steps below. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="form flex flex-between flex-wrap">
+                <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                <form action="">
+                    <input type="email" placeholder="Enter your email address">
+                    <input type="submit" value="Subscribe to Newsletter">
+                </form>
+            </div>
+            <div class="row footer-info">
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                    <h2>DreamShop</h2>
+                    <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                    <div class="mb social flex flex-between">
+                        <img src="img/icons/icon_twitter.png" alt="">
+                        <img src="img/icons/icon_facebook.png" alt="">
+                        <img src="img/icons/icon_instagram.png" alt="">
+                        <img src="img/icons/icon_git.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-4">
+                    <h3>Company</h3>
+                    <a href="">About</a>
+                    <a href="">Features</a>
+                    <a href="">Works</a>
+                    <a href="">Career</a>
+                </div>
+                <div class="mb col-xl-2 col-lg-2 col-sm-3">
+                    <h3>Help</h3>
+                    <a href="">Customer Support</a>
+                    <a href="">Delivery Details</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+                <div class="col-xl-2 offset-xl-0 col-lg-2 offset-lg-0 col-sm-3 offset-sm-1">
+                    <h3>FAQ</h3>
+                    <a href="">Account</a>
+                    <a href="">Manage Deliveries</a>
+                    <a href="">Orders</a>
+                    <a href="">Payments</a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-sm-3">
+                    <h3>Resources</h3>
+                    <a href="">Free eBooks</a>
+                    <a href="">Development Tutorial</a>
+                    <a href="">How to - Blog</a>
+                    <a href="">Youtube Playlist</a>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-lg-6">
+                    <p>DreamShop © 2024, All Rights Reserved</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="logo-card flex flex-between flex-end">
+                        <img src="img/icons/icon_visa.png" alt="">
+                        <img src="img/icons/icon_master.png" alt="">
+                        <img src="img/icons/icon_paypal.png" alt="">
+                        <img src="img/icons/icon_apay.png" alt="">
+                        <img src="img/icons/icon_pay.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/tabs.js"></script>
+    <script>
+        function hide() {
+            let el = document.getElementById('close');
+            if (el.style.display === 'none') {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
