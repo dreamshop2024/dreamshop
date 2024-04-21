@@ -1,0 +1,106 @@
+@media screen and (max-width: 1200px) {
+    nav input {
+        width: 300px;
+    }
+    .form {
+        width: 93%;
+        top: -100px;
+    }
+    .form h2 {
+        font-size: 30px;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 992px) {
+    nav input {
+        width: 25px;
+        height: 25px;
+        padding: 15px;
+        border-radius: 100%;
+        background-position: 3px 3px;
+    }
+    .icon-top {
+        width: 60px;
+    }
+    .min, .max {
+        display: none;
+    }
+    header {
+        padding: 80px 0;
+    }
+    header .offer {
+        width: 450px;
+        margin-bottom: 25px;
+    }
+    header .offer h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .info-number {
+        width: 400px;
+    }
+    .form {
+        width: 960px;
+        justify-content: center;
+        top: -135px;
+    }
+    .form h2 {
+        font-size: 30px;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .logos .col-sm-4 {
+        margin-bottom: 20px;
+    }
+    .logos .col-sm-4 img, .logos .col-sm-6 img {
+        margin: 0 auto;
+    }
+    .form {
+        width: 700px;
+    }
+    .mb {
+        margin-bottom: 25px;
+    }
+    .tab button {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .burger {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .menu a {
+        padding: 10px 0;
+    }
+    .header.open .menu {
+        display: block;
+        position: absolute;
+        height: 100vh;
+        right: 0;
+        top: 40px;
+        z-index: 5;
+        background-color: var(--colorLightGray);
+        width: 150px;
+        padding: 20px;
+    }
+    .form {
+        width: 520px;
+    }
+    .gotop {
+        display: none;
+    }
+    .card-media {
+        display: flex;
+        justify-content: center;
+    }
+    .tab button {
+        width: 45%;
+        padding-top: 10px;
+    }
+}
